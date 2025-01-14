@@ -1,2 +1,4 @@
 # go-docker-challenge
-Go challenge - Docker module - Full cycle course
+
+Docker hub image:
+https://hub.docker.com/repository/docker/flaviobrusamolin/fullcycle/general
