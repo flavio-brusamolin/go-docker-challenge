@@ -1,13 +1,13 @@
 # Etapa de build: compila o código Go
-FROM golang:1.23 AS builder
+FROM golang:alpine AS builder
 
 WORKDIR /usr/src/app
 
 COPY . .
 
-RUN go build -o app .
+RUN go build -ldflags="-s -w" -o app .
 
-FROM alpine:3.14
+FROM scratch
 
 WORKDIR /root/
 
